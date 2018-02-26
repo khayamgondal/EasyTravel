@@ -1,0 +1,24 @@
+v0 Harrisburg
+v1 Baltimore
+v2 Washington
+v3 Philadelphia
+v4 Binghamton
+v5 Allentown
+v6 New York
+#
+v0 v1 79.83
+v0 v5 81.15
+v1 v0 79.75
+v1 v2 39.42
+v1 v3 103.00
+v2 v1 38.65
+v3 v1 102.53
+v3 v5 61.44
+v3 v6 96.79
+v4 v5 133.04
+v5 v0 81.77
+v5 v3 62.05
+v5 v4 134.47
+v5 v6 91.63
+v6 v3 97.24
+v6 v5 87.94

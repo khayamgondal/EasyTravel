@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ChangeActivity" >
+
+   <RelativeLayout 
+       android:id="@+id/firstPage"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+      android:layout_centerInParent="true"
+      android:layout_alignParentTop="true"
+     
+      >
+<RadioGroup 
+    android:id="@+id/firstPageGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:layout_centerInParent="true"
+        android:layout_alignParentTop="true">
+    <RadioButton 
+        android:id="@+id/newPlace"
+        android:text="New Place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:checked="true"/>
+    <RadioButton 
+        android:id="@+id/newRoute"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="New Route"
+       android:layout_below="@+id/newPlace"/>
+    </RadioGroup>
+<Button 
+        android:id="@+id/cancelWizard"
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/firstPageGroup" 
+        android:onClick="firstPageCancelButton"/>
+    <Button
+        android:id="@+id/firstSubmit"
+        android:text="Next"
+        android:onClick="firstPageNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/cancelWizard" 
+        android:layout_below="@id/firstPageGroup"/>
+    
+</RelativeLayout>
+<RelativeLayout 
+       android:id="@+id/secondPage"
+       android:layout_height="match_parent"
+       android:layout_width="match_parent"
+    
+      android:layout_alignParentTop="true"
+       android:visibility="gone">
+
+    <TextView 
+        android:id="@+id/newPlaceLable"
+        android:text="New Place Name"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        
+        android:layout_alignParentTop="true"/>
+    <EditText
+        android:id="@+id/newPlaceText"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/newPlaceLable" 
+        />
+    <TextView 
+        android:id="@+id/newPlaceLatLable"
+        android:text="Place Latitude"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+       android:layout_below="@id/newPlaceLable"/>
+    <EditText
+        android:id="@+id/newPlaceLat"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/newPlaceLatLable" 
+         android:layout_below="@id/newPlaceLable"
+         android:inputType="numberDecimal"
+        />
+    <TextView 
+        android:id="@+id/newPlaceLonLable"
+        android:text="Place Longitude"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+       android:layout_below="@id/newPlaceLatLable"/>
+    <EditText
+        android:id="@+id/newPlaceLon"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/newPlaceLonLable" 
+        android:layout_below="@id/newPlaceLatLable"
+        android:inputType="numberDecimal"
+        />
+<Button 
+        android:id="@+id/back"
+        android:text="Back"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/newPlaceLonLable"
+        android:onClick="secondPageBackButton" />
+    <Button
+        android:id="@+id/secondSubmit"
+        android:text="Finish"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/back"
+        android:onClick="sendRequest"
+         android:layout_below="@id/newPlaceLonLable" />
+    
+</RelativeLayout>
+</RelativeLayout>

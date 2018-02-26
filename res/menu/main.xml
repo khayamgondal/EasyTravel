@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/showhide_auto"
+        android:title="@string/search_showhide"
+        android:icon="@android:drawable/ic_menu_search"
+        android:showAsAction="ifRoom"
+        />
+  <!--    <item
+        android:id="@+id/showRouteButton"
+        android:title="@string/route"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        />
+        -->
+    <item 
+        android:id="@+id/currentLoc"
+        android:title="@string/location"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        android:showAsAction="ifRoom"
+        />    
+    <item
+        android:id="@+id/directions"
+        android:title="@string/directions"
+        android:icon="@android:drawable/ic_menu_directions"
+        android:showAsAction="ifRoom"
+        />
+        <item 
+            android:id="@+id/navigation"
+            android:title="Navigation"
+            android:icon="@android:drawable/ic_menu_compass"
+            android:showAsAction="ifRoom"
+            />
+        <item 
+            android:id="@+id/changePageMenu"
+            android:title="Sumbit Changes"
+            android:icon="@android:drawable/ic_dialog_info"
+            />
+</menu>

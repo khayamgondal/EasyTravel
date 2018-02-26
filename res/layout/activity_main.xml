@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"    
+    android:id="@+id/layout">
+     
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#736F6E">
+
+        <ImageButton
+            android:id="@+id/sample_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+           
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_view" />
+        <ImageButton
+           android:id="@+id/shareButton"
+           android:layout_width="wrap_content"
+           android:layout_height="90dip"
+           android:clickable="true"
+           android:src="@android:drawable/ic_menu_share"
+           android:layout_toLeftOf="@id/sample_button" />
+       	<ImageView 
+       	    android:layout_width="40dip"
+       	    android:layout_height="40dip"
+       	    android:layout_alignParentLeft="true"
+       	    android:src="@drawable/ic_launcher"
+       	    android:id="@+id/iconID"
+       	    />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iconID"
+            android:layout_centerVertical="true"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:text="Easy Travel"/>
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/navigationP"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    
+    <AutoCompleteTextView android:id="@+id/autocompleteCountry"
+      android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/CONTRY_LABEL"
+       />
+    <AutoCompleteTextView android:id="@+id/locationAutoCompleteFrom"
+      android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/from"
+        android:visibility="gone"
+       />
+   <AutoCompleteTextView android:id="@+id/locationAutoCompleteTO"
+      android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/to"
+        android:visibility="gone"
+       />
+   <ScrollView 
+       android:id="@+id/scrollID"
+        android:layout_width="match_parent"
+    	android:layout_height="70dip"
+    	android:visibility="gone"
+		android:background="@android:color/black"
+    	android:hapticFeedbackEnabled="true"
+    >
+<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	
+    	android:id="@+id/showInfoLayout"> 
+      </LinearLayout>
+                 </ScrollView>
+  
+
+   <LinearLayout
+       android:id="@+id/buttonLayout"
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       android:orientation="horizontal"
+       android:visibility="gone"
+        >
+	
+       <ImageButton
+           android:id="@+id/buttonRoute"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:clickable="true"
+           android:src="@drawable/bus"
+           android:background="@drawable/image_bg" />
+       
+ <ImageButton
+           android:id="@+id/carRoute"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:clickable="true"
+           android:src="@drawable/car"
+           android:background="@drawable/image_bg"
+            />
+       <TextView
+           android:id="@+id/detailer"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:textSize="15sp"/>
+   </LinearLayout>
+    
+</LinearLayout>

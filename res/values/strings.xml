@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="highlightedTextViewColor">#000088</color>
+    <color name="normalTextViewColor">#000044</color>
+
+    <string name="app_name">EasyTravelling</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Easy Travelling</string>
+    <string name="CONTRY_LABEL">Search</string>
+    <string name="search_showhide">Serach</string>
+    <string name="location">My Position</string>
+    <string name="route">Routes</string>
+    <string name="directions">Directions</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="buttonRouteText">By Transit</string>
+    <string name="buttonBusRouteText">By Car</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="routewayText">Select travel mode </string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="downloadText">To use this app you are
+	    required to download map. Please Click on download button to
+	     download the map. You can also download the map manualy and 
+	     place under /sdcard/ directory.</string>
+    <string name="title_activity_change">ChangeActivity</string>
+
+</resources>
